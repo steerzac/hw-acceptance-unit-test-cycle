@@ -1,0 +1,14 @@
+-# in app/views/movies/show.html.haml
+
+%table#similar_movies
+  %thead
+    %tr
+      %th Movie Title
+      %th Rating
+      %th Release Date
+  %tbody
+    - @similar_movies.each do |movie|
+      %tr
+        %td= movie.title 
+        %td= movie.rating
+        %td= movie.release_date
